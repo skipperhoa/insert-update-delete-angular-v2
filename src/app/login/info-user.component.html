@@ -1,0 +1,32 @@
+<div class="container">
+<form (ngSubmit)="onSubmit(userform.value)" #userform="ngForm">
+    <h2 class="alert alert-secondary" role="alert">Infomation</h2>
+<table class="table">
+    <tbody>
+        <tr>
+            <td>Id</td>
+            <td><input type="number" name="id" class="form-control" [(ngModel)]="datas.id"/></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text" name="name" class="form-control" [(ngModel)]="datas.name"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password" class="form-control" [(ngModel)]="datas.password"/></td>
+        </tr>
+          <tr>
+            <td>age</td>
+            <td><input type="number" name="age" class="form-control" [(ngModel)]="datas.age"/></td>
+        </tr>
+        <tr>
+            <td>Created At:</td>
+            <td><input type="date" name="createdAt" class="form-control" [(ngModel)]="datas.createdAt" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="submit" class="btn btn-danger">Submit</button></td>
+        </tr>
+    </tbody>
+</table>
+</form>
+</div>
